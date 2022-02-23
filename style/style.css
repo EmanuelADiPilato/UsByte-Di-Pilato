@@ -458,6 +458,12 @@ footer{
         text-align: center;
         padding-top:  2rem;
     }
+    .descripEmpresa{
+        font-size: medium;
+    }
+    .descripEmpresa2{
+        font-size: medium;
+    }
     .article__subtitle{
         font-size: 1rem;
         padding-bottom: 3em;
