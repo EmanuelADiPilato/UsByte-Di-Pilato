@@ -13,15 +13,19 @@ header{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: 7rem 9rem;
     background-color: #f5f9fa;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2%;
 
 
 }
 nav{
-    grid-column: 4/10;
+    grid-column: 1/12;
 }
 .menu{
     display:flex;
-    width: 80%;
     height: 100%;
     list-style: none;
     justify-content: space-around;
@@ -36,32 +40,28 @@ nav{
     width: 100%;
     margin-left: 10%;
     text-align: center;
-    align-self: flex-end;
-    padding-bottom: 2%;
     font-size: 1em;
 }
 
 .title{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-row: 2;
-    grid-column: 6;
+    grid-column: 1/12;
     text-align: center;
     justify-self: center;
-    margin-top: 3rem;
 }
 .logonav{
-    grid-row: 1;
-    padding-top: 0.5em;
-    padding-right:0.5em ;
+    grid-column: 4;
+    grid-row: 2;
+    align-content: center;
+    align-items: center;
 
 }
 .title h1{
-    grid-row: 1;
-    font-size:5rem;
+    font-size:2.5rem;
 }
 .title h2{
-    grid-row: 3;
-    grid-column: 2;
     font-size: 1rem;
     text-align: center;
     
@@ -108,8 +108,8 @@ nav ul li:hover {
 
 }
 .div__item1{
-    width: 25rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -187,10 +187,13 @@ nav ul li:hover {
 .article__empresa{
     grid-column: 7/12;
     grid-row: 1/4;
+    margin-top: 15%;
 }
 .imgempresa1{
+    width: 100%;
+    height: 100%;
     grid-column:1/6;
-    grid-row: 1/3;
+    grid-row: 2/3;
 }
 .imgempresa2{
     grid-column: 2/3;
@@ -278,7 +281,7 @@ form{
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-variant: small-caps;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .logo__empresas{
@@ -293,7 +296,7 @@ form{
     opacity: 0.4;
 }
 .title__empresa{
-    font-size: 1em;
+    font-size:x-large;
     text-align: center;
     grid-row: 1;
     grid-column: 1;
@@ -307,33 +310,111 @@ form{
 }
 .descripEmpresa{
     font-family:sans-serif;
-    font-size: 1em;
+    font-size: medium;
     width: 100%;
     line-height: 1em;
     text-align: center;
     padding-top:5%;
-    display: block;
     justify-content: center;
-    align-content: center;
 }
 .descripEmpresa2{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
     line-height: 1em;
     text-align: justify;
     grid-row: 1/4;
     align-content: center;
     margin-left: 10%;
-    
-
 }
 .descripEmpresa2 h3{
     margin-top: 20%;
     margin-bottom: 10%;
-    text-align: center;
+    text-align: justify;
+}
+.descripEmpresa2 p{
+    font-size: medium;
+}
+/* stylo html servicios */
+
+.div_serviciosInformaticos{
+display: flex;
+flex-direction: column;
 }
 
+
+.subtitulo__servicios{
+    color: #0a8d9e;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.parrafo__servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1.5fr;
+    column-gap: 1em;
+}
+.imagen1SErvicios{
+    grid-column: 1;
+    grid-row: 1;
+}
+.parrafo1Servicios{
+    grid-column: 1;
+    grid-row: 2;
+}
+.imagen2SErvicios{
+    grid-column: 2;
+    grid-row: 1;
+}
+.parrafo2Servicios{
+    grid-column: 2;
+    grid-row: 2;
+}
+/* stylo html productos */
+
+.title__productos{
+    margin-bottom: 5%;
+    grid-column: 1/3;
+    font-size: 1.5rem;
+}
+
+.subtitulo__productos{
+    color: #0a8d9e;
+    margin-bottom: 10%;
+    text-align: end;
+
+}
+.div__productosInformaticos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+.parrafo1Productos{
+    grid-column: 2/3;
+    grid-row: 2;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+    width: 50%;
+}
+
+.parrafo2Productos{
+    grid-column: 1/2;
+    font-size: 1.5rem;
+}
+.parrafo3Productos{
+    grid-column: 2/3;
+    font-size: 1.5rem;
+}
+.imgproductos{
+    width: 100;
+}
+.img2Productos{
+    grid-column: 2;
+    grid-row: 3;
+}
+.imgproductosespec{
+    grid-column: 1;
+    grid-row:4 ;
+}
+/* stylo html contacto */
 .article__parrafo{
     text-align: right;
     margin-top: 150px;
@@ -424,7 +505,7 @@ footer{
     display: flex;
     flex-direction: row;
     padding-top: 50px;
-    padding-left: 20%;
+    padding-left: 10%;
 }
 .div__redes{
     display: inline;
@@ -437,8 +518,14 @@ footer{
         margin: 0;
         max-width: 100%;
     }
+    body{
+        font-size: medium;
+    }
+    .menu{
+        font-size: large;
+    }
     .title h1{
-        font-size: 3em;
+        font-size: 2rem;
         margin-top: 15%;
     }
     .logonav{
@@ -457,6 +544,9 @@ footer{
         justify-content: center;
         text-align: center;
         padding-top:  2rem;
+    }
+    .title__empresa{
+        font-size: 1rem;
     }
     .descripEmpresa{
         font-size: medium;
@@ -480,18 +570,18 @@ footer{
 
 
     .div__item1{
-        width: 20rem;
-        height: 20rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: medium;
     }
     .infocontacto{
         display: block;
     }
     .div__telcontacto{
         margin-left: 0%;
+    }
+    .div_serviciosInformaticos{
+        margin-top: 15%;
     }
 
     footer{
@@ -544,21 +634,27 @@ footer{
 
 
      header{
-        display:grid;
-        grid-template-rows: repeat(auto,1fr,);
-        margin-top: 5%;
+        display:block;
+        align-items: center;
+        justify-items: center;
+        margin-top: 15%;
         
-    } 
+    }
+    body{
+        font-size: medium;
+    }
+    
      .menu{
         display: block;
         text-align: center;
-        margin-bottom: 5%;
         font-size: 1em;
-        
     }
 
     nav hr{
         display: none;
+    }
+    .menu li{
+        margin-left: 0%;
     }
     .title{
         text-align: center;
@@ -566,14 +662,17 @@ footer{
         margin-bottom: 10%;
     }
     .title h1{
-        font-size: 2em;
-        margin-top: 15%;
+        font-size: 1.5rem;
     }
 
     .logonav{
-        margin-top: 1em;
+        display:none;
         
-        }
+    }
+    main{
+        margin-bottom: 25%;
+    }
+
     
     .imghome{
         grid-row:1/6;
@@ -594,32 +693,21 @@ footer{
         justify-content: center;
         text-align: center;
     }
-   section .servicos{
-       display: grid;
-       margin-left: 1%;     
-   }
    .tiposServ{
-    display:grid;
-    grid-template-areas:
-    "i1"
-    "i2"
-    "i3"
-    "i4";
-    justify-content: center;
-
+    display:flex;
+    flex-direction: column;
     }
-    .i1{
-        grid-area: i1;
+    .div__item1{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
-    .i2{
-        grid-area: i2;
+    .div__item1 p{
+        width: 100%;
+        font-size: medium;
     }
-    .i3{
-        grid-area: i3;
-    }
-    .i4{
-        grid-area: i4;
-    }
+    
     .article__subtitle{
         border-top: 1px black solid;
         padding-top: 5%;
@@ -627,7 +715,8 @@ footer{
         text-align: center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-variant: small-caps;
-        font-size: 1em;
+        font-size: large;
+        margin-top: 25%;
     }
 
     .contenedor__logos{
@@ -671,15 +760,45 @@ footer{
     .menu{
         margin-bottom: 10%;
     }
+    .section__empresa{
+        display: block;
+    }
+    .titleEmpresa{
+        margin-top: 20%;
+    }
+    .title__empresa{
+        font-size: medium;
+    }
+    .subtitulo__empresa{
+        font-size:smaller;
+    }
+    .descripEmpresa{
+        font-size: medium;
+    }
+    .innovarEmpresa{
+        display: block;
+
+    }
+    .descripEmpresa2{
+        margin-left: 0%;
+    }
+    /* stylo html servicios */
+    .parrafo__servicios{
+        display: block;
+        margin-bottom: 15%;
+    }
+    .subtitulo__servicios{
+        font-size: 1em;
+        text-align:center ;
+    }
+    /* stylo html contacto */
 
     .div__map{
         grid-column: 2/12;
         grid-row: 10;
         margin-top: 10%;
     }
-    .titleEmpresa{
-        margin-bottom: 20%;
-    }
+
     .article__formMap{
         grid-column: 2/12;
         grid-row: 4/8;
@@ -722,6 +841,7 @@ footer{
         padding-left: 0%;
         display: flex;
         flex-direction: column;
+        align-items: center;
 
     }
     .div__redes{
