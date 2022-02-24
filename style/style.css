@@ -350,6 +350,7 @@ flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1.5fr;
     column-gap: 1em;
+    font-size: 1em;
 }
 .imagen1SErvicios{
     grid-column: 1;
@@ -358,6 +359,7 @@ flex-direction: column;
 .parrafo1Servicios{
     grid-column: 1;
     grid-row: 2;
+    font-size: 1em;
 }
 .imagen2SErvicios{
     grid-column: 2;
@@ -366,43 +368,59 @@ flex-direction: column;
 .parrafo2Servicios{
     grid-column: 2;
     grid-row: 2;
+    font-size: 1em;
 }
 /* stylo html productos */
 
 .title__productos{
-    margin-bottom: 5%;
     grid-column: 1/3;
     font-size: 1.5rem;
+    text-align: center;
+    justify-items: end  ;
 }
 
 .subtitulo__productos{
     color: #0a8d9e;
-    margin-bottom: 10%;
-    text-align: end;
+    margin-bottom: 5%;
+    text-align: center;
 
 }
 .div__productosInformaticos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
 }
 .parrafo1Productos{
-    grid-column: 2/3;
+    grid-column:1/4;
     grid-row: 2;
     font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: justify;
-    width: 50%;
+    line-height: 1em;
+    text-align: center;
+    width: 40%;
+    padding-left: 5%;
+    
+    
+}
+.imgcodigo{
+    grid-column: 2/3;
+    grid-row: 2;
 }
 
 .parrafo2Productos{
     grid-column: 1/2;
     grid-row: 3;
     font-size: 1.5rem;
+    background-color: #392d71;
+    text-align: center;
+    padding-top: 15%;
+    color: #f5f9fa;
 }
 .parrafo3Productos{
     grid-column: 2/3;
     font-size: 1.5rem;
+    background-color: #223786;
+    color: #f5f9fa;
+    margin-top: 10%;
 }
 .imgproductos{
     width: 100;
@@ -410,10 +428,20 @@ flex-direction: column;
 .img2Productos{
     grid-column: 2;
     grid-row: 3;
+    background-color: #392d71;
+    text-align: center;
+    padding: 5% 5% 5% 5%;
 }
 .imgproductosespec{
     grid-column: 1;
     grid-row:4 ;
+    background-color: #223786;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 10%;
+    column-gap: 3em;
 }
 /* stylo html contacto */
 .article__parrafo{
@@ -584,6 +612,79 @@ footer{
     .div_serviciosInformaticos{
         margin-top: 15%;
     }
+    /* stylo html productos */
+
+.title__productos{
+    grid-column: 1/3;
+    font-size: 1rem;
+    text-align: center;
+    justify-items: end  ;
+}
+
+.subtitulo__productos{
+    color: #0a8d9e;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+.div__productosInformaticos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+}
+.parrafo1Productos{
+    grid-column:1/4;
+    grid-row: 2;
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: center;
+    width: 40%;
+    padding-left: 5%;
+    
+    
+}
+.imgcodigo{
+    grid-column: 2/3;
+    grid-row: 2;
+    padding-right: 10%;
+}
+
+.parrafo2Productos{
+    grid-column: 1/2;
+    grid-row: 3;
+    font-size: 1rem;
+    background-color: #392d71;
+    text-align: center;
+    padding-top: 15%;
+    color: #f5f9fa;
+}
+.parrafo3Productos{
+    grid-column: 2/3;
+    font-size: 1rem;
+    background-color: #223786;
+    color: #f5f9fa;
+    margin-top: 10%;
+}
+.imgproductos{
+    width: 100;
+}
+.img2Productos{
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #392d71;
+    text-align: center;
+    padding: 5% 5% 5% 5%;
+}
+.imgproductosespec{
+    grid-column: 1;
+    grid-row:4 ;
+    background-color: #223786;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 10%;
+}
 
     footer{
         display:flex;
@@ -755,7 +856,6 @@ footer{
     .div__contacto1{
         display: block;
         padding-top: 30%;
-        
     }
 /* stylo html empresa  */
     .menu{
@@ -817,6 +917,61 @@ footer{
         margin-bottom: 10%;
     }
     
+    /* stylo html contacto */
+    .title__productos{
+        font-size: 1.5em ;
+    }
+    .div__productosInformaticos{
+        display: block;
+    }
+    .parrafo1Productos{
+        font-size: 1rem;
+        line-height: 1em;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5%;
+        padding-left: 0%;
+    }
+    .imgcodigo{
+       display: none;
+    }
+    
+    .parrafo2Productos{
+        grid-column: 1/2;
+        grid-row: 3;
+        font-size: 1rem;
+        background-color: #392d71;
+        text-align: center;
+        padding-top: 15%;
+        color: #f5f9fa;
+    }
+    .parrafo3Productos{
+        grid-column: 2/3;
+        font-size: 1rem;
+        background-color: #223786;
+        color: #f5f9fa;
+        margin-top: 10%;
+    }
+    .imgproductos{
+        width: 100;
+    }
+    .img2Productos{
+        grid-column: 2;
+        grid-row: 3;
+        background-color: #392d71;
+        text-align: center;
+        padding: 5% 5% 5% 5%;
+    }
+    .imgproductosespec{
+        grid-column: 1;
+        grid-row:4 ;
+        background-color: #223786;
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        column-gap: 1em;
+        margin-top: 0%;
+        padding-top: 10%;
+    }
     /* stylo footer */
      footer{
             background-color: #25a2d2;
