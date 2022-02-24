@@ -397,6 +397,7 @@ flex-direction: column;
 
 .parrafo2Productos{
     grid-column: 1/2;
+    grid-row: 3;
     font-size: 1.5rem;
 }
 .parrafo3Productos{
