@@ -29,12 +29,11 @@ nav{
     height: 100%;
     list-style: none;
     justify-content: space-around;
-    text-decoration: none;
+    text-decoration: none; 
 }
 .menu a{
     text-decoration: none;
     color: black;
-
 }
 .menu li{
     width: 100%;
@@ -220,7 +219,7 @@ form{
     display:grid;
     padding: 1em;
     grid-column: 4/10;
-    background-color:#0a8d9e ;
+    background-image: linear-gradient(180deg, #00ffff 0, #41f5ff 25%, #53bcf2 50%, #5087ab 75%, #425a6e 100%);
     border:1px solid black;
     grid-template-columns: 2fr;
     grid-gap: 20px;
@@ -512,9 +511,6 @@ p .titleform strong{
     justify-content: space-between;
     align-items: flex-end;
 }
-
-
-
 
 footer{
     display:grid;
