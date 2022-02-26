@@ -162,6 +162,16 @@ nav ul li:hover {
     margin-right: 10%;
     margin-left: 10%;
 }
+.trans{
+    overflow: hidden;
+}
+.transImg{
+    transition: transform 20ms;
+}
+.trans:hover .transImg{
+    transform: scale(1.1);
+
+}
 .contacto{
     display: grid;
     margin-left: auto;
@@ -228,6 +238,7 @@ form{
     text-align: center;
     margin-right: 1%;
 }
+
  .infocontacto{
     padding-top: 4em; 
     
@@ -460,6 +471,7 @@ flex-direction: column;
     grid-template-rows: 10rem 10rem 10rem 10rem ;
     
 }
+
 .infoContacto{
     grid-row: 1;
     grid-column: 1/12;
@@ -1012,4 +1024,8 @@ footer{
         
     }
     
+}
+/* animaciones */
+.rebt:hover{
+    animation: bounce 1s linear;
 }
