@@ -162,16 +162,8 @@ nav ul li:hover {
     margin-right: 10%;
     margin-left: 10%;
 }
-.trans{
-    overflow: hidden;
-}
-.transImg{
-    transition: transform 20ms;
-}
-.trans:hover .transImg{
-    transform: scale(1.1);
 
-}
+
 .contacto{
     display: grid;
     margin-left: auto;
@@ -1028,4 +1020,13 @@ footer{
 /* animaciones */
 .rebt:hover{
     animation: bounce 1s linear;
+}
+.trans{
+    overflow: hidden;
+}
+.transImg{
+    transition: transform 20ms;
+}
+.trans:hover .transImg{
+    transform: scale(1.1);
 }
